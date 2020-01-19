@@ -8,4 +8,6 @@ Examples for the NightwatchJS tutorials on the [reallyMello YouTube channel](htt
 ## Installation and use
 Install [NodeJS](https://www.nodejs.org) if you don't already have it.
 1) Clone the repository
-2) Run *nightwatch -g*
+2) Run npm install *nightwatch -g*
+
+Tests can be run by running *nightwatch* from the root of the example directories
