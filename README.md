@@ -10,4 +10,4 @@ Install [NodeJS](https://www.nodejs.org) if you don't already have it.
 1) Clone the repository
 2) Run npm install *nightwatch -g*
 
-Tests can be run by running *nightwatch* from the root of the example directories
+Tests can be run by running the *nightwatch* command from a terminal in the root of the example directories
