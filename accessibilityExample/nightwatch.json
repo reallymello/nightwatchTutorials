@@ -2,7 +2,7 @@
     "src_folders": ["test"],
     "page_objects_path": "page-objects",
     "globals_path": "./globals.js",
-    "custom_commands_path": ["commands"],
+    "custom_commands_path": ["./node_modules/nightwatch-axe-verbose/src/commands"],
     "skip_testcases_on_fail": false,
     "end_session_on_fail": true,
 
