@@ -2,9 +2,7 @@
 
 This suite contains example tests that explore using the axe-core library to perform accessibility assertions in your NightwatchJS test suite.
 
-Video below or keep reading.
-
-[![a11y](http://img.youtube.com/vi/nSodkqB-838/0.jpg)](http://www.youtube.com/watch?v=nSodkqB-838 "Nightwatch accessibility testing with Axe")
+This is the source code from this [Nightwatch Axe accessibility tutorial video](https://youtu.be/nSodkqB-838). The full explanation is below. 
 
 ## How axe-core is wired into Nightwatch
 
