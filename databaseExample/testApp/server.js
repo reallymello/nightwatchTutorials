@@ -43,24 +43,19 @@ app.get('/removePerson/:firstName/:lastName', function (req, res) {
     let firstName = req.params.firstName;
     let lastName = req.params.lastName;
 
-    // connect to your database
     sql.connect(config, function (err) {
 
         if (err) console.log(err);
 
-        // create Request object
         var request = new sql.Request();
 
-        // query to the database and get the records
-        //INSERT INTO people (first_name, last_name) VALUES ('${firstName}', '${lastName}')
         let query = `DELETE FROM people WHERE first_name = '${firstName}' AND last_name = '${lastName}'`;
         request.query(query, function (err, recordset) {
 
             if (err) {
                 res.send(query + " " + err)
             }
-            // send records as a response
-            //res.send(recordset);
+
             res.send(`Removed ${firstName} ${lastName}`);
         });
     });
