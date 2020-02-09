@@ -2,6 +2,8 @@
 
 This suite contains example tests that explore using the axe-core library to perform accessibility assertions in your NightwatchJS test suite.
 
+This is the source code from this [Nightwatch Axe accessibility tutorial video](https://youtu.be/nSodkqB-838). The full explanation is below. 
+
 ## How axe-core is wired into Nightwatch
 
 There is a /commands folder with files axeInject.js and axeRun.js. axeInject reads in the axe-core library to make it available in Nightwatch tests when you call .axeInject() in a test case. axeRun executes the assertions for aXe when .axeRun(*control to run against*).
