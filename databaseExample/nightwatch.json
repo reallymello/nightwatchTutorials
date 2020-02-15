@@ -1,6 +1,5 @@
 {
     "src_folders": ["test"],
-    "page_objects_path": "page-objects",
     "globals_path": "./globals.js",
     "custom_assertions_path": ["./node_modules/nightwatch-mssql-assertions/src/assertions"],
     "skip_testcases_on_fail": false,
