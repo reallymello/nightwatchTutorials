@@ -4,6 +4,7 @@ Examples for the NightwatchJS tutorials on the [reallyMello YouTube channel](htt
 
 * [Tutorial - Writing your first Nightwatch.js test using page objects](https://youtu.be/6Ufg6pPNVTs) is in [/pomExample](https://github.com/reallymello/nightwatchTutorials/tree/master/pomExample)
 * [Using Nightwatch as an automated accessibility testing tool](https://youtu.be/nSodkqB-838) in [/accessibilityExample](https://github.com/reallymello/nightwatchTutorials/tree/master/accessibilityExample)
+* [MSSQL database testing in Nightwatch.js tests](https://youtu.be/52BVA9cV2Mc) is in [/databaseExample](https://github.com/reallymello/nightwatchTutorials/tree/master/databaseExample)
 
 
 ## Installation and use
