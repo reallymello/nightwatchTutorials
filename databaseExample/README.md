@@ -65,4 +65,4 @@ If the where clause is left null it will return the count of all the rows in the
 
 *The queries are not parameterized and could be subject to SQL injection. Assumed to be used ethically in test environments only*
 
-For more information see [https://www.davidmello.com/tags/nightwatchjs](https://www.davidmello.com/tags/nightwatchjs) or the [reallyMello YouTube channel](https://www.youtube.com/playlist?list=PLLS_Ef55N6hmkt3-JlW40GAGpXSlp8t_D)
+For more information see [https://www.davidmello.com/database-testing-with-nightwatchjs/](https://www.davidmello.com/database-testing-with-nightwatchjs/) or the [reallyMello YouTube channel](https://www.youtube.com/playlist?list=PLLS_Ef55N6hmkt3-JlW40GAGpXSlp8t_D)
