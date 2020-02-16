@@ -2,7 +2,7 @@
 
 This suite contains example tests that use the nightwatch-mssql-assertions package to write Nightwatch.js test assertions against Microsoft SQL (MSSQL databases). This can be useful when you need to verify actions performed by browser/selenium/Nightwatch test automation causes the desired changes in the backend. 
 
-This is the source code from this [MS SQL database testing video](https://youtu.be/52BVA9cV2Mc). The full explanation is below.
+This is the source code from this [Nightwatch SQL Server database testing video](https://youtu.be/52BVA9cV2Mc). The full explanation is below.
 
 ## Prerequisites
 
