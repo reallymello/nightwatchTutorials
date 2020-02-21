@@ -2,6 +2,8 @@
 
 This suite contains example tests that use the nightwatch-mssql-assertions package to write Nightwatch.js test assertions against Microsoft SQL (MSSQL databases). This can be useful when you need to verify actions performed by browser/selenium/Nightwatch test automation causes the desired changes in the backend. 
 
+This is the source code from this [Nightwatch SQL Server database testing video](https://youtu.be/52BVA9cV2Mc). The full explanation is below.
+
 ## Prerequisites
 
 ### Docker
@@ -63,4 +65,4 @@ If the where clause is left null it will return the count of all the rows in the
 
 *The queries are not parameterized and could be subject to SQL injection. Assumed to be used ethically in test environments only*
 
-For more information see [https://www.davidmello.com/tags/nightwatchjs](https://www.davidmello.com/tags/nightwatchjs) or the [reallyMello YouTube channel](https://www.youtube.com/playlist?list=PLLS_Ef55N6hmkt3-JlW40GAGpXSlp8t_D)
+For more information see [https://www.davidmello.com/database-testing-with-nightwatchjs/](https://www.davidmello.com/database-testing-with-nightwatchjs/) or the [reallyMello YouTube channel](https://www.youtube.com/playlist?list=PLLS_Ef55N6hmkt3-JlW40GAGpXSlp8t_D)
