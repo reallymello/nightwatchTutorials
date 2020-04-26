@@ -1,5 +1,11 @@
-# nightwatchExamples
+# Nightwatch.js page objects and drop down select elements
 Examples for the NightwatchJS tutorials on the [reallyMello YouTube channel](https://www.youtube.com/c/reallyMello)
+
+This code contains a sample calculator application with 3 drop downs for selecting 2 numeric inputs and a math operation to perform on them which outputs the result.
+
+The test cases automate testing this user interface using Nightwatch.js
+
+See [davidmello.com/nightwatch-page-object-model-with-commands/](https://www.davidmello.com/nightwatch-page-object-model-with-commands/) for the full tutorial.
 
 ## Installation and use
 1) Clone the repository
