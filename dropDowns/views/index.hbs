@@ -1,0 +1,46 @@
+<h1>{{title}}</h1>
+<p>An example application for practicing automating test cases involving forms with drop down select lists in Nightwatch.js</p>
+<br />
+<p>Please select your values and desired math operation.</p>
+
+<form action="/" method="post" id="calcForm">
+    <select name="num1" id="numList1">
+        {{#each numbersList1}}
+            <option>{{this.value}}</option>
+        {{/each}}
+    </select>
+
+    <select name="operators" id="operatorList">
+        {{#each operators}}
+            <option>{{this.value}}</option>
+        {{/each}}
+    </select>
+
+    <select name="num2" id="numList2">
+        {{#each numbersList2}}
+            <option>{{this.value}}</option>
+        {{/each}}
+    </select>
+
+    <input id='fni' name="firstNumberIndex" value=0 type="hidden" />
+    <input id='sni' name="secondNumberIndex" value=0 type="hidden" />
+    <input id='opi' name="operatorIndex" value=0 type="hidden" />
+
+    <input id='submit' type="submit" value="=">
+
+    <span id="result">{{result}}</span>
+
+</form>
+
+<script>
+    $('#numList1>option:eq({{firstSelectedNumber}})').attr('selected', true);
+    $('#numList2>option:eq({{secondSelectedNumber}})').attr('selected', true);
+    $('#operatorList>option:eq({{selectedOperator}})').attr('selected', true);
+
+    $('#submit').click(function() {
+        $('#fni').val($('#numList1 option:selected').index());
+        $('#sni').val($('#numList2 option:selected').index());
+        $('#opi').val($('#operatorList option:selected').index());
+    })
+
+</script>
