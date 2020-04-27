@@ -1,5 +1,5 @@
 # Nightwatch.js page objects and drop down select elements
-This is the source code for the [Advanced Nightwatch.js testing using the Page Object and Command API](https://youtu.be/gJvAbGYP-H8) tutorial on the [reallyMello YouTube channel](https://www.youtube.com/c/reallymello).
+This is the source code for the [Advanced Nightwatch.js testing using the Page Object and Command API](https://youtu.be/gJvAbGYP-H8) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
 
 This code contains a sample calculator application with 3 drop downs for selecting 2 numeric inputs and a math operation to perform on them which outputs the result.
 
