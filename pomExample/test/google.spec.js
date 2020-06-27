@@ -6,6 +6,8 @@ module.exports = {
             .assert.title('Google')
             .assert.visible('@searchBar')
             .setValue('@searchBar', 'nightwatch')
-            .click('@submit');
+            .setValue('@searchBar', browser.Keys.ENTER)
+            .assert.containsText('body', 'Nightwatch.js | Node.js powered End-to-End testing framework')
+            .end();
     }
 }
