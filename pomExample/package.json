@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chromedriver": "^83.0.0",
+    "chromedriver": "^85.0.1",
     "geckodriver": "^1.19.1",
     "nightwatch": "^1.4.1"
   }
