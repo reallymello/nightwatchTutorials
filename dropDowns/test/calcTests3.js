@@ -3,6 +3,7 @@
 // Future tutorials we'll cover optimal test case selection.
 
 module.exports = {
+    '@tags': ['best'],
     beforeEach: function (browser) {
         browser.page.calculator().navigate();
     },

@@ -3,6 +3,7 @@
 // See calcTests3.js for further refactoring using Nightwatch Page Object commands.
 
 module.exports = {
+    '@tags': ['better'],
     beforeEach: function (browser) {
         let calcPage = browser.page.calculator();
         calcPage.navigate();
