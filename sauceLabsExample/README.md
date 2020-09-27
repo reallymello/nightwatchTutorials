@@ -1,5 +1,5 @@
 # Tutorial How to run Nightwatch.js tests in SauceLabs
-This is the source code for the [How to run Nightwatch.js tests in SauceLabs](https://www.youtube.com/playlist?list=PLLS_Ef55N6hmkt3-JlW40GAGpXSlp8t_D) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
+This is the source code for the [How to run Nightwatch.js tests in SauceLabs](https://youtu.be/muMuP0DLbCQ) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
 
 This code contains a simple automated test to show how to connect Nightwatch and SauceLabs for text execution in their cloud-based selenium grid.
 
