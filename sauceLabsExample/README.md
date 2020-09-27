@@ -5,7 +5,7 @@ This code contains a simple automated test to show how to connect Nightwatch and
 
 It makes use of the npm package *saucelabs* for running Nightwatch against the the SauceLabs REST API and the package [nightwatch-saucelabs-endsauce](https://www.npmjs.com/package/nightwatch-saucelabs-endsauce) for saving the test results to SauceLabs.
 
-See [https://www.davidmello.com/software-testing](https://www.davidmello.com/software-testing) for the full tutorial.
+See [https://www.davidmello.com/how-to-use-nightwatch-with-saucelabs/](https://www.davidmello.com/how-to-use-nightwatch-with-saucelabs/) for the full tutorial.
 
 ## Installation and use
 1) Clone the repository
