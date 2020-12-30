@@ -1,11 +1,11 @@
 # Tutorial How to run Nightwatch.js tests in SauceLabs
-This is the source code for the [How to run Nightwatch.js tests in SauceLabs](https://www.youtube.com/playlist?list=PLLS_Ef55N6hmkt3-JlW40GAGpXSlp8t_D) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
+This is the source code for the [How to run Nightwatch.js tests in SauceLabs](https://youtu.be/muMuP0DLbCQ) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
 
 This code contains a simple automated test to show how to connect Nightwatch and SauceLabs for text execution in their cloud-based selenium grid.
 
 It makes use of the npm package *saucelabs* for running Nightwatch against the the SauceLabs REST API and the package [nightwatch-saucelabs-endsauce](https://www.npmjs.com/package/nightwatch-saucelabs-endsauce) for saving the test results to SauceLabs.
 
-See [https://www.davidmello.com/software-testing](https://www.davidmello.com/software-testing) for the full tutorial.
+See [https://www.davidmello.com/how-to-use-nightwatch-with-saucelabs/](https://www.davidmello.com/how-to-use-nightwatch-with-saucelabs/) for the full tutorial.
 
 ## Installation and use
 1) Clone the repository
