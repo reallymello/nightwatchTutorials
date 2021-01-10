@@ -23,6 +23,6 @@
         "chromedriver": "^87.0.4",
         "geckodriver": "^1.19.1",
         "nightwatch": "^1.4.1",
-        "nightwatch-axe-verbose": "^1.0.0"
+        "nightwatch-axe-verbose": "^1.1.1"
     }
 }
