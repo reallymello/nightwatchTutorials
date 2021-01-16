@@ -16,7 +16,7 @@
         "morgan": "~1.9.1"
     },
     "devDependencies": {
-        "chromedriver": "^85.0.1",
+        "chromedriver": "^87.0.5",
         "geckodriver": "^1.19.1"
     }
 }
