@@ -21,7 +21,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "axe-core": "^3.4.1",
-        "chromedriver": "^85.0.1",
+        "chromedriver": "^87.0.5",
         "geckodriver": "^1.19.1",
         "mssql": "^6.0.1",
         "nightwatch": "^1.4.1",
