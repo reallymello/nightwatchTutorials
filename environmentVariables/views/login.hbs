@@ -1,0 +1,31 @@
+{{#> head-block}}
+    <link href="/stylesheets/signin.css" rel="stylesheet"> {{/head-block}}
+
+    <main>
+        <h1>👕 {{title}}</h1>
+        <p>An example application for practicing automating test cases using Nightwatch.js environment globals</p>
+        <div class="jumbotron">
+            <div class="container">
+                <form class="form-signin" action="/" method="post">
+                    <h2 class="form-signin-heading">Please sign in</h2>
+                    <label for="username" class="sr-only">Username</label>
+                    <input id="username" name="username" class="form-control" autocorrect="off" autocapitalize="none" placeholder="Username" required autofocus>
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">Sign in <i class="fa fa-sign-in-alt"></i></button>
+                    {{#if errorVisibility}}
+                        <div id="loginError">
+                            <br />
+                            {{message}}
+                        </div>
+                    {{/if}}
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class='footer-item'>
+                <p>Follow me! <a href='https://twitter.com/reallymello'>@reallyMello</a> and subscribe on <a href='https://youtube.com/playlist?list=PLLS_Ef55N6hmkt3-JlW40GAGpXSlp8t_D'>YouTube</a> for more <a href="https://www.davidmello.com/software-testing">testing tutorials</a></p>
+            </div>
+        </footer>
+    </main>

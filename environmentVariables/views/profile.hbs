@@ -1,0 +1,20 @@
+{{#> head-block}}
+    <link href="/stylesheets/grid.css" rel="stylesheet"> {{/head-block}}
+    <main>
+        <div class="container">
+
+            <h1>👕 {{title}}</h1>
+            <br />
+            <p class="lead">Welcome back <strong id="firstLastName">{{firstName}} {{lastName}}</strong> your user preferences are listed below.</p>
+
+            <h2>Preferences</h2>
+            <div class="row">
+                <div class="col-sm-2"><strong>Shirt Size</strong></div>
+                <div id="shirtSize" class="col-2">{{shirtSize}}</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"><strong>Favorite Website</strong></div>
+                <div class="col-2"><a href="https://www.davidmello.com/">davidmello.com</a></div>
+            </div>
+    </main>
