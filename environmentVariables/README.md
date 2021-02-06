@@ -1,9 +1,9 @@
 # Nightwatch.js Global Environment Variables Tutorial
-This is the source code for the [Nightwatch Environment Globals](https://youtu.be/gJvAbGYP-H8) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
+This is the source code for the [Nightwatch Environment Globals](https://youtu.be/CSwLBt_t4Vw) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
 
 This project contains a sample application for the "reallyMello Shirt Company" and tests written in Nightwatch in order to demonstrate why and how to use Nightwatch global environment variables instead of hardcoding text strings in your tests.
 
-See [davidmello.com/nightwatch-page-object-model-with-commands/](https://www.davidmello.com/nightwatch-page-object-model-with-commands/) for the full tutorial.
+See [davidmello.com/nightwatch-global-environment-variables/](https://www.davidmello.com/nightwatch-global-environment-variables/) for the full tutorial.
 
 ## Starting the test app
 1) Clone the repository
