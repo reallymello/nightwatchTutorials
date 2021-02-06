@@ -1,0 +1,26 @@
+{
+    "name": "testrailexample",
+    "version": "1.0.0",
+    "description": "Nightwatch.js tutorial showing how to post test results to the TestRail test case management system automatically from your test suite.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "nightwatch.js",
+        "nightwatch",
+        "testrail",
+        "test case management",
+        "selenium",
+        "grid",
+        "automated",
+        "testing"
+    ],
+    "author": "David Mello (https://www.davidmello.com)",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "chromedriver": "^88.0.0",
+        "nightwatch": "^1.4.3",
+        "nightwatch-testrail-updater": "^1.0.4"
+    }
+}
