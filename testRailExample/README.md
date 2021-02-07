@@ -1,5 +1,5 @@
 # Tutorial How to integrate TestRail with Nightwatch.js tests
-This is the source code for the []() tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
+This is the source code for the [How to integrate Testrail with NightwatchJS automated tests](https://youtu.be/p01y9brwpBc) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
 
 This code contains a simple automated test to show how to integrate TestRail with Nightwatch for the test results to post automatically to your test case management system..
 
