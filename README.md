@@ -7,6 +7,9 @@ Examples for the NightwatchJS tutorials on the [reallyMello YouTube channel](htt
 * [Using Nightwatch as an automated accessibility testing tool](https://youtu.be/nSodkqB-838) in [/accessibilityExample](https://github.com/reallymello/nightwatchTutorials/tree/master/accessibilityExample)
 * [MSSQL database testing in Nightwatch.js tests](https://youtu.be/52BVA9cV2Mc) is in [/databaseExample](https://github.com/reallymello/nightwatchTutorials/tree/master/databaseExample)
 * [How to use SauceLabs with Nightwatch.js for automated browser testing](https://youtu.be/muMuP0DLbCQ) is in [/sauceLabsExample](https://github.com/reallymello/nightwatchTutorials/tree/master/sauceLabsExample)
+* [Implementing a minimum accessibility test plan using Nightwatch](https://youtu.be/lsv_lwxu2tI) is in [/a11yTestPlanExample](https://github.com/reallymello/nightwatchTutorials/tree/master/a11yTestPlanExample)
+* [NightwatchJS test globals tutorial for writing multi-environment test automation](https://youtu.be/CSwLBt_t4Vw) is in [/environmentVariables](https://github.com/reallymello/nightwatchTutorials/tree/master/environmentVariables)
+* [How to integrate Testrail with NightwatchJS automated tests](https://youtu.be/p01y9brwpBc) is in [/testRailExample](https://github.com/reallymello/nightwatchTutorials/tree/master/testRailExample)
 
 
 ## Installation and use
