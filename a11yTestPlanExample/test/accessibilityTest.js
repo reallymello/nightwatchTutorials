@@ -32,4 +32,15 @@ module.exports = {
                 runOnly: ['scrollable-region-focusable', 'accesskeys', 'region', 'skip-link', 'tabindex']
             });
     }
+    /*,
+        'Run all keyboard rules': function (browser) {
+            browser.page.news()
+                .axeRun('body', {
+                    runOnly: {
+                        //https://www.deque.com/axe/core-documentation/api-documentation/#options-parameter
+                        type: 'tag',
+                        values: ['cat.keyboard']
+                    }
+                });
+        }*/
 }

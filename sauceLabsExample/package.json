@@ -18,7 +18,7 @@
     "author": "David Mello (https://www.davidmello.com)",
     "license": "Apache-2.0",
     "dependencies": {
-        "nightwatch": "^1.4.3",
+        "nightwatch": "^1.6.4",
         "nightwatch-saucelabs-endsauce": "^1.0.2",
         "saucelabs": "^4.6.1"
     }
