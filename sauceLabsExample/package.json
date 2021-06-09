@@ -19,7 +19,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "nightwatch": "^1.6.4",
-        "nightwatch-saucelabs-endsauce": "^1.0.2",
-        "saucelabs": "^4.6.1"
+        "nightwatch-saucelabs-endsauce": "^1.0.4",
+        "saucelabs": "^5.1.0"
     }
 }
