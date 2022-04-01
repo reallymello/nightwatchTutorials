@@ -20,9 +20,7 @@
     "author": "David Mello",
     "license": "Apache-2.0",
     "dependencies": {
-        "axe-core": "^3.4.1",
-        "chromedriver": "^91.0.1",
-        "geckodriver": "^1.19.1",
+        "chromedriver": "^100.0.0",
         "mssql": "^6.0.1",
         "nightwatch": "^1.6.4",
         "nightwatch-mssql-assertions": "^1.0.0"
