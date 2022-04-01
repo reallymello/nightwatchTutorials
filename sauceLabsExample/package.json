@@ -20,6 +20,6 @@
     "dependencies": {
         "nightwatch": "^1.7.8",
         "nightwatch-saucelabs-endsauce": "^1.0.6",
-        "saucelabs": "^6.0.0"
+        "saucelabs": "^7.1.3"
     }
 }
