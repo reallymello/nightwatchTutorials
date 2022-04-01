@@ -19,7 +19,7 @@
     "author": "David Mello (https://www.davidmello.com)",
     "license": "Apache-2.0",
     "dependencies": {
-        "chromedriver": "^90.0.1",
+        "chromedriver": "^100.0.0",
         "nightwatch": "^1.6.4",
         "nightwatch-testrail-updater": "^1.0.4"
     }
