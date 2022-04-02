@@ -3,8 +3,8 @@ module.exports = {
         browser.page.blog().navigate();
     },
     afterEach: function (browser) {
-        browser.end();
         browser.endSauce();
+        browser.end();
     },
     'Can see homepage': function (browser) {
         browser.page.blog().assert.title('David Mello')
