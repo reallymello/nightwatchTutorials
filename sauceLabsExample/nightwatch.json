@@ -12,15 +12,19 @@
             "skip_testcases_on_fail": false,
             "use_ssl": true,
             "silent": true,
-            "username": "${SAUCE_USERNAME}",
-            "access_key": "${SAUCE_ACCESS_KEY}",
-            "sauce_region": "us-west-1",
             "selenium": {
                 "port": 443,
-                "host": "ondemand.saucelabs.com",
-                "start_process": false
+                "host": "ondemand.saucelabs.com"
+            },
+            "webdriver": {
+              "start_process": false
             },
             "desiredCapabilities": {
+              "sauce:options" : {
+                "username": "${SAUCE_USERNAME}",
+                "accessKey": "${SAUCE_ACCESS_KEY}",
+                "region": "us-west-1"
+              },
                 "browserName": "chrome",
                 "screenResolution": "1280x1024",
                 "browserVersion": "latest",

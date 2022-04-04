@@ -7,7 +7,7 @@ module.exports = {
         browser.end();
     },
     'Can see homepage': function (browser) {
-        browser.page.blog().assert.title('David Mello')
+        browser.page.blog().assert.titleEquals('David Mello')
     },
     'Can navigate to Software Testing': function (browser) {
         browser.page.blog().click('@softwareTesting')
