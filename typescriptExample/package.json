@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "@types/nightwatch": "^2.0.6",
-    "nightwatch": "^2.1.0"
+    "nightwatch": "^2.1.3"
   }
 }
