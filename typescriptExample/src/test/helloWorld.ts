@@ -3,7 +3,7 @@ import { HelloWorldPage } from "../pages/helloWorldPage";
 
 const home: NightwatchTests = {
   "Google title test": () => {
-    browser.url("https://google.com/ncr").assert.title("Google");
+    browser.url("https://google.com/ncr").assert.titleEquals("Google");
   },
   "Test commands": () => {
     const helloWorld: EnhancedPageObject<HelloWorldPage> =
