@@ -1,5 +1,0 @@
-node_modules
-logs
-tests_output
-dist
-*.env
