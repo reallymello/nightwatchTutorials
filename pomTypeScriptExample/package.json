@@ -1,0 +1,29 @@
+{
+  "name": "nightwatch-typescript-pom-example",
+  "version": "1.0.0",
+  "description": "Example automated test suite written in Nightwatch.js and TypeScript using the page object model.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && nightwatch"
+  },
+  "keywords": [
+    "nightwatch.js",
+    "nightwatch",
+    "selenium",
+    "typescript",
+    "nodejs",
+    "tutorial",
+    "test automation",
+    "automated tests",
+    "page objects"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/nightwatch": "^2.0.7",
+    "chromedriver": "^100.0.0",
+    "geckodriver": "^3.0.1",
+    "nightwatch": "^2.1.4",
+    "typescript": "^4.6.4"
+  }
+}
