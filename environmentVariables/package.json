@@ -14,7 +14,7 @@
         "hbs": "^4.1.2",
         "http-errors": "~1.6.3",
         "morgan": "~1.9.1",
-        "nightwatch": "^1.6.4"
+        "nightwatch": "^2.1.4"
     },
     "devDependencies": {
         "chromedriver": "^100.0.0",
