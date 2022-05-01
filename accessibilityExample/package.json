@@ -22,7 +22,7 @@
         "axe-core": "^4.4.1",
         "chromedriver": "^100.0.0",
         "geckodriver": "^3.0.1",
-        "nightwatch": "^1.6.4",
+        "nightwatch": "^2.1.4",
         "nightwatch-axe-verbose": "^1.1.1"
     }
 }
