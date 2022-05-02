@@ -1,6 +1,6 @@
 module.exports = {
   'Google search test': function (browser) {
-    let google = browser.page.google();
+    let google = browser.page.googlePage();
 
     google
       .navigate()
