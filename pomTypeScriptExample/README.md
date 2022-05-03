@@ -1,6 +1,6 @@
 # Nightwatch.js TypeScript Test and Page Object Model Tutorial
 
-Examples for the NightwatchJS tutorials on the [reallyMello YouTube channel](https://www.youtube.com/c/reallyMello)
+Examples for TypeScript Nightwatch JS tutorial on the [Using TypeScript in Nightwatch js UI automated test suites](https://youtu.be/fUPwk8bFVJM)
 
 This code pairs with the article [Using TypeScript to write Nightwatch.js Automated Tests](https://www.davidmello.com/using-nightwatch-with-typescript/)
 
@@ -9,7 +9,7 @@ it converts the original example in [/pomExample](https://github.com/reallymello
 ## Installation and use
 
 1. Clone the repository
-2. Run _npm install typescript -g_
-3. Run _npm install nightwatch -g_
-4. Run _npm install_ from the command line in the root folder.
-5. Run _npm test_ in the command line of the root folder.
+2. Run `npm install typescript -g`
+3. Run `npm install nightwatch -g`
+4. Run `npm install` from the command line in the root folder.
+5. Run `npm test` in the command line of the root folder.
