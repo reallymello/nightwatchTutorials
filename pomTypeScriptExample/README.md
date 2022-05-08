@@ -1,6 +1,6 @@
 # Nightwatch.js TypeScript Test and Page Object Model Tutorial
 
-Examples for TypeScript Nightwatch JS tutorial on the [Using TypeScript in Nightwatch js UI automated test suites](https://youtu.be/fUPwk8bFVJM)
+Accompanying example source code for TypeScript Nightwatch JS YouTube video [Using TypeScript in Nightwatch js UI automated test suites](https://youtu.be/fUPwk8bFVJM)
 
 This code pairs with the article [Using TypeScript to write Nightwatch.js Automated Tests](https://www.davidmello.com/using-nightwatch-with-typescript/)
 
