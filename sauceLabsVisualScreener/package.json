@@ -1,13 +1,13 @@
 {
-  "name": "saucelabsexample",
+  "name": "visual-regression-testing-saucelabs-nightwatch-example",
   "version": "1.0.0",
-  "description": "Nightwatch.js tutorial showing how to run Nightwatch tests with SauceLabs and upload the test results there.",
+  "description": "Nightwatch examples on how to use nightwatch-saucelabs-visual and nightwatch-saucelabs-endsauce to run visual regression testing with SauceLabs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "nightwatch.js",
+    "visual regression testing",
     "nightwatch",
     "saucelabs",
     "selenium",

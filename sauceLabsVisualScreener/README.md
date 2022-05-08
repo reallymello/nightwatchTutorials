@@ -1,17 +1,21 @@
-# Tutorial How to run Nightwatch.js tests in SauceLabs
-This is the source code for the [How to run Nightwatch.js tests in SauceLabs](https://youtu.be/muMuP0DLbCQ) tutorial on the [reallyMello](https://www.youtube.com/c/reallymello) YouTube channel.
+# Visual Regression Testing with SauceLabs and Nightwatch.js examples
 
-This code contains a simple automated test to show how to connect Nightwatch and SauceLabs for text execution in their cloud-based selenium grid.
+This code contains a visual regression tests that run against SauceLabs using Nightwatch js.
 
-It makes use of the npm package *saucelabs* for running Nightwatch against the the SauceLabs REST API and the package [nightwatch-saucelabs-endsauce](https://www.npmjs.com/package/nightwatch-saucelabs-endsauce) for saving the test results to SauceLabs.
-
-See [https://www.davidmello.com/how-to-use-nightwatch-with-saucelabs/](https://www.davidmello.com/how-to-use-nightwatch-with-saucelabs/) for the full tutorial.
+These tests use the [nightwatch-saucelabs-visual](https://www.npmjs.com/package/nightwatch-saucelabs-visual) plugin and [nightwatch-saucelabs-endsauce](https://www.npmjs.com/package/nightwatch-saucelabs-endsauce) custom commands to allow Nightwatch to run the test automation against SauceLabs Visual (fka screener) and use visual assertions in the tests.
 
 ## Installation and use
-1) Clone the repository
-2) Run *npm install* from the command line in the root folder.
-3) Type *nightwatch -v*. If the nightwatch version doesn't print type *npm install nightwatch -g*
-4) Export two environment variables for {SAUCE_USERNAME} and {SAUCE_ACCESS_KEY} which can be found in the *Account > User Settings* section of SauceLabs. Alternately, replace those two placeholders in the nightwatch.json file in the project's root directory with those same credentials. Also ensure the *sauce_region* value matches for your account (this example uses us-west-1).
-4) Execute the test by running *nightwatch* in the root folder.
 
-Once the test completes you should be able to see the video of the result when you login to the Automated test results section of the SauceLabs website for your account along with the passing status of the test.
+_These tests require a SauceLabs subscription with SauceLabs Visual on it_
+
+1. Clone the repository
+2. Run `npm install` from the command line in the root folder.
+3. Run `npm install nightwatch -g`
+4. Export environment variables named `{SAUCE_USERNAME}`, `{SAUCE_ACCESS_KEY}`, and `{SAUCE_VISUAL_API_KEY}`, holding their respective values, which can be found in the `Account > User Settings` section of SauceLabs and inside your user profile in the SauceLabs Visual Portal. Alternately, replace those two placeholders in the `nightwatch.config.js` file in the project's root directory with those same values. Also ensure the `sauce_region` value in the config file matches for your account (this example uses us-west-1).
+5. Execute the test by running `nightwatch` in the root folder.
+
+The first time you execute the tests they should fail on the visual assertion because there is no baseline. After the tests fail, log in to the SauceLabs Visual portal and accept the baseline.
+
+After, some tests may still fail in these examples as the example pages have logic to randomly change their visual appearance as a good way to check that this works finding visual changes.
+
+Details of the failures will appear in the SauceLabs visual portal.

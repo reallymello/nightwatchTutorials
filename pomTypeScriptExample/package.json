@@ -1,7 +1,7 @@
 {
-  "name": "nightwatch-typescript-pom-example",
+  "name": "nightwatch-typescript-page-object-model-example",
   "version": "1.0.0",
-  "description": "Example automated test suite written in Nightwatch.js and TypeScript using the page object model.",
+  "description": "Nightwatch TypeScript test examples using the page object model and @types/nightwatch from DefinitelyTyped",
   "main": "index.js",
   "scripts": {
     "test": "tsc && nightwatch"
