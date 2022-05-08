@@ -29,7 +29,6 @@ module.exports = {
 
     browser.page.shiftingContent().click('@example3Link');
     browser.takeSnapshot('List page');
-    browser.back();
 
     browser.assert.visuallyTheSame();
   },
