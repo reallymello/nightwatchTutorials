@@ -1,37 +1,40 @@
 {
-    "src_folders": ["test"],
-    "custom_commands_path": ["./node_modules/nightwatch-saucelabs-endsauce/commands"],
-    "page_objects_path": "./page-objects",
-    "test_workers": {
-        "enabled": true,
-        "workers": "auto"
-    },
-    "test_settings": {
-        "default": {
-            "launch_url": "https://www.davidmello.com",
-            "skip_testcases_on_fail": false,
-            "use_ssl": true,
-            "silent": true,
-            "selenium": {
-                "port": 443,
-                "host": "ondemand.saucelabs.com"
-            },
-            "webdriver": {
-              "start_process": false
-            },
-            "desiredCapabilities": {
-              "sauce:options" : {
-                "username": "${SAUCE_USERNAME}",
-                "accessKey": "${SAUCE_ACCESS_KEY}",
-                "region": "us-west-1"
-              },
-                "browserName": "chrome",
-                "screenResolution": "1280x1024",
-                "browserVersion": "latest",
-                "javascriptEnabled": true,
-                "acceptSslCerts": true,
-                "timeZone": "New York"
-            }
-        }
+  "src_folders": ["test"],
+  "custom_commands_path": [
+    "./node_modules/nightwatch-saucelabs-endsauce/commands"
+  ],
+  "page_objects_path": "./page-objects",
+  "test_workers": {
+    "enabled": true,
+    "workers": "auto"
+  },
+  "test_settings": {
+    "default": {
+      "launch_url": "https://www.davidmello.com",
+      "skip_testcases_on_fail": false,
+      "use_ssl": true,
+      "silent": true,
+      "selenium": {
+        "port": 443,
+        "host": "ondemand.saucelabs.com"
+      },
+      "webdriver": {
+        "start_process": false
+      },
+      "desiredCapabilities": {
+        "sauce:options": {
+          "username": "${SAUCE_USERNAME}",
+          "accessKey": "${SAUCE_ACCESS_KEY}",
+          "region": "us-west-1",
+          "screenResolution": "1920x1080"
+        },
+        "browserName": "chrome",
+        "platformName": "Windows 11",
+        "browserVersion": "latest",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "timeZone": "New York"
+      }
     }
+  }
 }
