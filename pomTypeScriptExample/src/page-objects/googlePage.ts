@@ -1,7 +1,7 @@
 import { PageObjectModel, EnhancedPageObject } from 'nightwatch';
 
 const googleCommands = {
-  clickSearch(this: EnhancedPageObject) {
+  clickSearch(this: GooglePage) {
     return this.waitForElementVisible('@submit', 10000)
       .click('@submit')
       .waitForElementNotPresent('@submit');
