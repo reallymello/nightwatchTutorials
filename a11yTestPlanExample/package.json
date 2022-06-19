@@ -20,9 +20,11 @@
     "license": "Apache-2.0",
     "dependencies": {
         "axe-core": "^4.1.1",
-        "chromedriver": "^100.0.0",
         "geckodriver": "^2.0.2",
-        "nightwatch": "^2.1.4",
-        "nightwatch-axe-verbose": "^1.1.1"
+        "nightwatch": "^2.2.1",
+        "nightwatch-axe-verbose": "^1.1.2"
+    },
+    "devDependencies": {
+        "chromedriver": "^102.0.0"
     }
 }
