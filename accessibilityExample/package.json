@@ -20,8 +20,8 @@
     "license": "Apache-2.0",
     "dependencies": {
         "geckodriver": "^3.0.1",
-        "nightwatch": "^2.2.1",
-        "nightwatch-axe-verbose": "^1.1.3"
+        "nightwatch": "^2.3.4",
+        "nightwatch-axe-verbose": "^2.0.1"
     },
     "devDependencies": {
         "chromedriver": "^103.0.0"
