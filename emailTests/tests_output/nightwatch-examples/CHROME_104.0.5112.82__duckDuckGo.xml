@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="nightwatch-examples.duckDuckGo"
+    errors="0" failures="1" hostname="" id="" package="nightwatch-examples" skipped="0"
+    tests="1" time="6.412" timestamp="">
+  
+    <testcase name="should get messages" classname="nightwatch-examples.duckDuckGo" time="6.412" assertions="2">
+
+      <failure message="Testing if first email with a subject, to_email, or to_name matching search term &#34;test&#34; in inbox id &#34;1784336&#34; contains text test2 in the message body in 5000ms - expected &#34;test2&#34; but got: &#34;test
+&#34; (5264ms)">    at Object.should get messages (C:\Projects\nightwatchTutorials\emailTests\tests\nightwatch-examples\duckDuckGo.js:6:20)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,21 @@
+{
+  "name": "emailtests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "chromedriver": "^104.0.0",
+    "nightwatch": "^2.3.3"
+  },
+  "dependencies": {
+    "nightwatch-mailtrap": "^1.0.1",
+    "superagent": "^8.0.0"
+  }
+}

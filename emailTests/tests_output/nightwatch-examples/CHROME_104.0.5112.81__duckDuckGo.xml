@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="nightwatch-examples.duckDuckGo"
+    errors="0" failures="1" hostname="" id="" package="nightwatch-examples" skipped="0"
+    tests="1" time="0.7530" timestamp="">
+  
+    <testcase name="should get messages" classname="nightwatch-examples.duckDuckGo" time="0.7530" assertions="2">
+
+      <failure message="Error while running &#34;getEmailBody&#34; command: [TypeError] instance.reportProtocolErrors is not a function">TypeError: Error while running &#34;getEmailBody&#34; command: [TypeError] instance.reportProtocolErrors is not a function</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

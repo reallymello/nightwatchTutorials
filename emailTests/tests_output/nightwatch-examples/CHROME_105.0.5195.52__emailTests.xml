@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="nightwatch-examples.emailTests"
+    errors="0" failures="1" hostname="" id="" package="nightwatch-examples" skipped="0"
+    tests="1" time="5.722" timestamp="">
+  
+    <testcase name="should get messages" classname="nightwatch-examples.emailTests" time="5.722" assertions="1">  <failure message="Testing if inbox id &#34;1784336&#34; contains exactly 10 emails in 5000ms - expected &#34;10&#34; but got: &#34;Error: Unauthorized&#34; (5404ms)">    at Object.should get messages (C:\Projects\nightwatchTutorials\emailTests\tests\nightwatch-examples\emailTests.js:12:20)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
