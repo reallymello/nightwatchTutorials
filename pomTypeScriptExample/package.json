@@ -20,10 +20,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/nightwatch": "^2.0.7",
-    "chromedriver": "^100.0.0",
+    "@types/nightwatch": "^2.3.12",
+    "chromedriver": "^106.0.0",
     "geckodriver": "^3.0.1",
-    "nightwatch": "^2.1.4",
+    "nightwatch": "^2.3.9",
     "typescript": "^4.6.4"
   }
 }

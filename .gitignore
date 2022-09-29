@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Nightwatch test outdir
+tests_output
+
+# Nightwatch typescript distrib
+distrib/src/tests

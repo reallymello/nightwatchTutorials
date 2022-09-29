@@ -2,7 +2,7 @@ import { NightwatchTests, NightwatchBrowser } from 'nightwatch';
 import { GooglePage } from '../page-objects/googlePage';
 
 const googleTest: NightwatchTests = {
-  'Google search test': function (browser: NightwatchBrowser) {
+  'Google search test': (browser: NightwatchBrowser) => {
     const google: GooglePage = browser.page.googlePage();
 
     google
@@ -19,6 +19,30 @@ const googleTest: NightwatchTests = {
       );
 
     browser.end();
+  },
+  'Will find custom axe command types': (browser: NightwatchBrowser) => {
+    const google: GooglePage = browser.page.googlePage();
+
+    google
+      .navigate()
+      .assert.titleEquals('Google')
+      .axeInject()
+      .axeRun('body', {
+        rules: {
+          'color-contrast': {
+            enabled: false,
+          },
+          region: {
+            enabled: false,
+          },
+          'aria-required-attr': {
+            enabled: false,
+          },
+          'aria-valid-attr-value': {
+            enabled: false,
+          },
+        },
+      });
   },
 };
 
