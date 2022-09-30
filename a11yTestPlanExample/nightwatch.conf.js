@@ -21,9 +21,7 @@ module.exports = {
   page_objects_path: 'page-objects',
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/#writing-custom-commands
-  custom_commands_path:
-    './node_modules/nightwatch-axe-verbose/nightwatch/commands',
-
+  custom_commands_path: [],
   // plugins: ['nightwatch-axe-verbose'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/#writing-custom-assertions
