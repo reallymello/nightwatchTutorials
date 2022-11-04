@@ -12,7 +12,7 @@
   "devDependencies": {
     "cheerio": "^1.0.0-rc.12",
     "chromedriver": "^104.0.0",
-    "nightwatch": "^2.3.3"
+    "nightwatch": "^2.4.2"
   },
   "dependencies": {
     "nightwatch-mailtrap": "^1.0.1",

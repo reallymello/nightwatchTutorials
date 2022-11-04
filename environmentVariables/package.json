@@ -14,11 +14,11 @@
         "hbs": "^4.1.2",
         "http-errors": "~1.6.3",
         "morgan": "~1.9.1",
-        "nightwatch": "^2.1.4"
+        "nightwatch": "^2.4.2"
     },
     "devDependencies": {
         "chromedriver": "^100.0.0",
         "dotenv": "^8.2.0",
-        "geckodriver": "^3.0.1"
+        "geckodriver": "^3.2.0"
     }
 }

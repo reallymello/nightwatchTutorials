@@ -20,7 +20,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "chromedriver": "^100.0.0",
-        "nightwatch": "^2.1.4",
+        "nightwatch": "^2.4.2",
         "nightwatch-testrail-updater": "^1.0.4"
     }
 }
