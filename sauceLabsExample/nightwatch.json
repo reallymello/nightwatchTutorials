@@ -1,8 +1,6 @@
 {
   "src_folders": ["test"],
-  "custom_commands_path": [
-    "./node_modules/nightwatch-saucelabs-endsauce/commands"
-  ],
+  "plugins": ["nightwatch-saucelabs-endsauce"],
   "page_objects_path": "./page-objects",
   "test_workers": {
     "enabled": true,

@@ -6,7 +6,7 @@ module.exports = {
       browser.globals.mailtrap.mailboxId,
       'test email with link'
     );
-    assert.strictEqual(url, 'http://www.google.com');
+    assert.strictEqual(url, 'https://www.google.com');
   },
   'Will return empty if no emails match': async (browser) => {
     const url = await browser.getLinkFromEmail(
