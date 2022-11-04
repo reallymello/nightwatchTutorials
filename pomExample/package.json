@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "geckodriver": "^3.0.1",
+    "geckodriver": "^3.2.0",
     "nightwatch": "^2.1.4"
   },
   "devDependencies": {
