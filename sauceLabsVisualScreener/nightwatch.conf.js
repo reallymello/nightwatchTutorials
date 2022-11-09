@@ -20,12 +20,8 @@ module.exports = {
   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
   page_objects_path: ['page-objects'],
 
-  custom_commands_path: [
-    './node_modules/nightwatch-saucelabs-endsauce/commands',
-  ],
-
   // See https://nightwatchjs.org/guide/extending-nightwatch/plugin-api.html
-  plugins: ['nightwatch-saucelabs-visual'],
+  plugins: ['nightwatch-saucelabs-visual', 'nightwatch-saucelabs-endsauce'],
 
   webdriver: {},
 
