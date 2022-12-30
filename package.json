@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "nightwatch": "^2.3.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.1"
   }
 }
