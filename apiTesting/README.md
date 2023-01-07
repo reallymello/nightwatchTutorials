@@ -2,13 +2,26 @@
 
 This tutorial shows how to use the [Nightwatch API Testing Plugin](https://github.com/nightwatchjs/nightwatch-plugin-apitesting) for testing REST APIs. This is convenient because you can have your API tests in the same project as your Selenium UI test automation instead of a separate SuperTest or Postman project for example.
 
+The Nightwatch plugin has some advantages over separately importing SuperTest in that it is more nicely integrated with the Nightwatch reporting engine and provides an express mockserver.
+
+## Examples
+
+Remote tests against the Swagger PetStore public test API
+[/nightwatch/tests/petStore.ts](/apiTesting/nightwatch/tests/petStore.ts)
+
+Remote tests against the [Restful Booker](https://restful-booker.herokuapp.com) public test API
+[/nightwatch/tests/restfulBooker.ts](/apiTesting/nightwatch/tests/restfulBooker.ts)
+
+Local tests against the [Restful Booker](https://github.com/mwinteringham/restful-booker) API code run locally (to simulate local dev/test workflows)
+[/nightwatch/tests/restfulBooker.ts](/apiTesting/nightwatch/tests/restfulBookerLocal.ts)
+
 ## Installation
 
 Run `npm install` to bring in the required dependencies to run this project.
 
 ### Manual Installation
 
-*You only need to do this on new projects from scratch. This repository already did this for you.*
+_You only need to do this on new projects from scratch. This repository already did this for you._
 
 If you are starting a project from scratch you'll need to add `@nightwatch/apitesting` as a plugin.
 
@@ -19,10 +32,11 @@ If you are starting a project from scratch you'll need to add `@nightwatch/apite
 // nightwatch.conf.js
 {
   "plugins": [
-    "@nightwatch/apitesting"      
+    "@nightwatch/apitesting"
   ]
 }
 ```
+
 3. If your project is only running API tests you can shut off launching the browser by adding/changing these settings in your run profile also in `nightwatch.conf.js`
 
 ```js
@@ -32,7 +46,7 @@ If you are starting a project from scratch you'll need to add `@nightwatch/apite
   "webdriver": {
     "start_process": false
   }
-}  
+}
 ```
 
 4. Optionally, for type support, you can use the ApiTest type inside `./nightwatch/types/nightwatch.d.ts`
@@ -66,7 +80,7 @@ Use `npx nightwatch` to run your Nightwatch TypeScript API tests.
 ```bash
 npx nightwatch
 
- Running:  default: petStore.ts 
+ Running:  default: petStore.ts
 
 ┌ ────────────────── √  default: petStore.ts  ─────────────────────────────────────┐
 │                                                                                  │

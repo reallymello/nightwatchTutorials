@@ -1,0 +1,3 @@
+[submodule "apiTesting/apiTesting/restfulBooker/restful-booker"]
+	path = apiTesting/apiTesting/restfulBooker/restful-booker
+	url = https://github.com/mwinteringham/restful-booker
