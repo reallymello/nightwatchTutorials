@@ -6,7 +6,7 @@ The Nightwatch plugin has some advantages over separately importing SuperTest in
 
 ## Examples
 
-- Remote tests against the Swagger PetStore public test API
+- Remote tests against the [Swagger PetStore]('https://petstore.swagger.io) public test API
   [/nightwatch/tests/petStore.ts](/apiTesting/nightwatch/tests/petStore.ts)
 
 - Remote tests against the [Restful Booker](https://restful-booker.herokuapp.com) public test API
@@ -14,6 +14,8 @@ The Nightwatch plugin has some advantages over separately importing SuperTest in
 
 - Local tests against the [Restful Booker](https://github.com/mwinteringham/restful-booker) API code run locally (to simulate local dev/test workflows)
   [/nightwatch/tests/restfulBooker.ts](/apiTesting/nightwatch/tests/restfulBookerLocal.ts)
+
+More test APIs can be found on [https://www.davidmello.com/best-websites-for-practicing-test-automation/](https://www.davidmello.com/best-websites-for-practicing-test-automation/)
 
 ## Installation
 
