@@ -34,3 +34,66 @@ If you are starting a project from scratch you'll need to add `@nightwatch/apite
   }
 }  
 ```
+
+4. Optionally, for type support, you can use the ApiTest type inside `./nightwatch/types/nightwatch.d.ts`
+
+This would allow you to have intellisense when working with the supertest object if you provide the type in your test similar to
+
+```js
+'GET something': async ({ supertest }: ApiTest) => {
+    // ...
+}
+```
+
+Include that in your `tsconfig.json` paths
+
+```js
+// tsconfig.json
+"paths": {
+    "compilerOptions": {
+        // ...
+        "paths": {
+            "nightwfgdfatch": ["./types/nightwatch.d.ts"]
+        }
+    }
+}
+```
+
+## Running the API tests
+
+Use `npx nightwatch` to run your Nightwatch TypeScript API tests.
+
+```bash
+npx nightwatch
+
+ Running:  default: petStore.ts 
+
+┌ ────────────────── √  default: petStore.ts  ─────────────────────────────────────┐
+│                                                                                  │
+│                                                                                  │
+│    [Pet Store] Test Suite                                                        │
+│    ────────────────────────────────────────────                                  │
+│                                                                                  │
+│    – can GET count of sold inventory                                             │
+│    √ Passed [ok]: .get('/store/inventory/').expect(200) ok                       │
+│    √ Passed [ok]: .get('/store/inventory/').expect('Content-Type', /json/) ok    │
+│    √ Expected 3  to be greaterThan(+0):                                          │
+│    √ default: petStore.ts [Pet Store] can GET count of sold inventory (338ms)    │
+│    – can POST a pet to the store                                                 │
+│    √ Passed [ok]: .post('/pet').expect(200) ok                                   │
+│    √ Passed [ok]: .post('/pet').expect('Content-Type', /json/) ok                │
+│    √ Expected 31337  to equal(31337):                                            │
+│    √ Expected 'available'  to equal('available'):                                │
+│    √ default: petStore.ts [Pet Store] can POST a pet to the store (261ms)        │
+│    – can POST order to the pet store                                             │
+│    √ Passed [ok]: .post('/store/order').expect(200) ok                           │
+│    √ Passed [ok]: .post('/store/order').expect('Content-Type', /json/) ok        │
+│    √ Expected 82852063  to be greaterThan(+0):                                   │
+│    √ Expected 1  to equal(1):                                                    │
+│    √ Expected 'placed'  to equal('placed'):                                      │
+│    √ default: petStore.ts [Pet Store] can POST order to the pet store (277ms)    │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+  ✨ PASSED. 12 total assertions (4.068s)
+```
