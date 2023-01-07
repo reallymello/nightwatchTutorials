@@ -1,6 +1,6 @@
-import { ApiTest } from "nightwatch";
+import { ApiTest, NightwatchTests } from "nightwatch";
 
-module.exports = {
+const petStoreTests: NightwatchTests = {
     'can GET count of sold inventory': async ({ supertest }: ApiTest) => {
       await supertest
         .request('https://petstore.swagger.io/v2')
@@ -61,3 +61,4 @@ module.exports = {
     },
   };
   
+export default petStoreTests;
