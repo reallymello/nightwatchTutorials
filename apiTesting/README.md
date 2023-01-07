@@ -53,7 +53,7 @@ Include that in your `tsconfig.json` paths
     "compilerOptions": {
         // ...
         "paths": {
-            "nightwfgdfatch": ["./types/nightwatch.d.ts"]
+            "nightwatch": ["./types/nightwatch.d.ts"]
         }
     }
 }
