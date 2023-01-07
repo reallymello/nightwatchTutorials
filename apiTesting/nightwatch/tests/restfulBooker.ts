@@ -79,7 +79,8 @@ const bookerTests: NightwatchTests = {
       .request(baseUrl)
       .put(`/booking/${bookingId}`)
       .set('Content-type', 'application/json')
-      .set('Cookie', `token=${authToken.token}`)
+      //.set('Cookie', `token=${authToken.token}`)
+      .auth('admin', 'password123') // showing another way of passing in creds
       .accept('application/json')
       .send({
         firstname: 'Really',
