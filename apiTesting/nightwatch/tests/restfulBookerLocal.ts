@@ -3,15 +3,15 @@
  * calls to a remotely deployed one.
  */
 
-import { ApiTest, NightwatchTests } from 'nightwatch';
+import { NightwatchBrowser, NightwatchTests } from 'nightwatch';
 
 const server = require('../../restfulBooker/restful-booker/app');
 
 const bookerTests: NightwatchTests = {
-  'Can GET ping': async ({ supertest }: ApiTest) => {
+  'Can GET ping': async ({ supertest }: NightwatchBrowser) => {
     await supertest.request(server).get('/ping').expect(201);
   },
-  'Can POST a booking': async ({ supertest }: ApiTest) => {
+  'Can POST a booking': async ({ supertest }: NightwatchBrowser) => {
     await supertest
       .request(server)
       .post('/booking')

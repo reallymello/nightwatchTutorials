@@ -1,7 +1,7 @@
-import { ApiTest, NightwatchTests } from "nightwatch";
+import { NightwatchBrowser, NightwatchTests } from "nightwatch";
 
 const petStoreTests: NightwatchTests = {
-    'can GET count of sold inventory': async ({ supertest }: ApiTest) => {
+    'can GET count of sold inventory': async ({ supertest }: NightwatchBrowser) => {
       await supertest
         .request('https://petstore.swagger.io/v2')
         .get('/store/inventory/')
@@ -12,7 +12,7 @@ const petStoreTests: NightwatchTests = {
           // console.log(JSON.stringify(response.body, null, 2));
         });
     },
-    'can POST a pet to the store': async ({ supertest }: ApiTest) => {
+    'can POST a pet to the store': async ({ supertest }: NightwatchBrowser) => {
       await supertest
         .request('https://petstore.swagger.io/v2')
         .post('/pet')
@@ -39,7 +39,7 @@ const petStoreTests: NightwatchTests = {
           expect(response.body.status).to.equal('available');
         });
     },
-    'can POST order to the pet store': async ({ supertest }: ApiTest) => {
+    'can POST order to the pet store': async ({ supertest }: NightwatchBrowser) => {
       await supertest
         .request('https://petstore.swagger.io/v2')
         .post('/store/order')

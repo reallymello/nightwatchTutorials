@@ -1,4 +1,4 @@
-import { ApiTest, NightwatchTests } from 'nightwatch';
+import { NightwatchBrowser, NightwatchTests } from 'nightwatch';
 import superagent from 'superagent';
 
 const baseUrl: string = 'https://restful-booker.herokuapp.com';
@@ -17,7 +17,7 @@ const bookerTests: NightwatchTests = {
       })
     ).body;
   },
-  'Can get first booking': async ({ supertest }: ApiTest) => {
+  'Can get first booking': async ({ supertest }: NightwatchBrowser) => {
     await supertest
       .request(baseUrl)
       .get('/booking')
@@ -30,7 +30,7 @@ const bookerTests: NightwatchTests = {
         expect(response.body[0].bookingid).to.be.greaterThan(0);
       });
   },
-  'Can create and retrieve booking': async ({ supertest }: ApiTest) => {
+  'Can create and retrieve booking': async ({ supertest }: NightwatchBrowser) => {
     const bookingData = {
       firstname: 'Really',
       lastname: 'Mello',
@@ -73,7 +73,7 @@ const bookerTests: NightwatchTests = {
         expect(booking).to.eql(bookingData);
       });
   },
-  'Can update booking': async ({ supertest }: ApiTest) => {
+  'Can update booking': async ({ supertest }: NightwatchBrowser) => {
     // Update Booking
     await supertest
       .request(baseUrl)
@@ -104,7 +104,7 @@ const bookerTests: NightwatchTests = {
         expect(response.body).to.have.property('totalprice', 2);
       });
   },
-  'Can partially update booking': async ({ supertest }: ApiTest) => {
+  'Can partially update booking': async ({ supertest }: NightwatchBrowser) => {
     await supertest
       .request(baseUrl)
       .patch(`/booking/${bookingId}`)
@@ -151,7 +151,7 @@ const bookerTests: NightwatchTests = {
         );
       });
   },
-  'Can delete booking': async ({ supertest }: ApiTest) => {
+  'Can delete booking': async ({ supertest }: NightwatchBrowser) => {
     await supertest
       .request(baseUrl)
       .delete(`/booking/${bookingId}`)
@@ -165,14 +165,14 @@ const bookerTests: NightwatchTests = {
       .set('Cookie', `token=${authToken.token}`)
       .expect(405);
   },
-  'Cannot delete deleted booking': async ({ supertest }: ApiTest) => {
+  'Cannot delete deleted booking': async ({ supertest }: NightwatchBrowser) => {
     await supertest
       .request(baseUrl)
       .delete(`/booking/${bookingId}`)
       .set('Cookie', `token=${authToken.token}`)
       .expect(405);
   },
-  'Cannot retrieve deleted booking': async ({ supertest }: ApiTest) => {
+  'Cannot retrieve deleted booking': async ({ supertest }: NightwatchBrowser) => {
     await supertest
       .request(baseUrl)
       .get(`/booking/${bookingId}`)

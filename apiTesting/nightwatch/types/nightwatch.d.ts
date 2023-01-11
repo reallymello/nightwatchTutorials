@@ -1,10 +1,10 @@
-import { SuperTest, Test } from "supertest";
-export * from "@types/nightwatch";
+import supertest, { SuperTest, Test } from 'supertest';
+export * from '@types/nightwatch';
 
-declare module "nightwatch" {
-    export type ApiTest = {
-        supertest: {
-            request: (app: any) => SuperTest<Test>
-        }
-    }
+declare module 'nightwatch' {
+  export interface NightwatchCustomCommands {
+    supertest: {
+      request: (app: any) => SuperTest<Test>;
+    };
+  }
 }
