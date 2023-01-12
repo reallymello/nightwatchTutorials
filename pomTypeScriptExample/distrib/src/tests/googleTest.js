@@ -14,7 +14,7 @@ const googleTest = {
             .text.to.contain('Nightwatch.js | Node.js powered End-to-End testing framework');
         browser.end();
     },
-    'Will find custom axe command': (browser) => {
+    'Will find custom axe command types': (browser) => {
         const google = browser.page.googlePage();
         google
             .navigate()

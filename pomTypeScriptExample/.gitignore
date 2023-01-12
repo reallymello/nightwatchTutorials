@@ -1,3 +1,4 @@
 node_modules/
 tests_output/
 chromedriver.log
+distrib/
