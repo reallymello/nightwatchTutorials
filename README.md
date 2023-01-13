@@ -12,6 +12,7 @@ Examples for the NightwatchJS tutorials on the [reallyMello YouTube channel](htt
 * [NightwatchJS test globals tutorial for writing multi-environment test automation](https://youtu.be/CSwLBt_t4Vw) is in [/environmentVariables](https://github.com/reallymello/nightwatchTutorials/tree/master/environmentVariables)
 * [How to integrate Testrail with NightwatchJS automated tests](https://youtu.be/p01y9brwpBc) is in [/testRailExample](https://github.com/reallymello/nightwatchTutorials/tree/master/testRailExample)
 * [Automated Email Testing with Nightwatch and MailTrap](https://www.davidmello.com/email-testing-nightwatch-mailtrap/) is in [/emailTests](https://github.com/reallymello/nightwatchTutorials/tree/master/emailTests)
+* [How to do API Testing with Nightwatch and SuperTest](https://www.davidmello.com/api-testing-with-nightwatch-supertest/) is in [/apiTesting](https://github.com/reallymello/nightwatchTutorials/tree/master/apiTesting)
 
 
 ## Installation and use
