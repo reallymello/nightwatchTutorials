@@ -1,28 +1,29 @@
 {
-    "name": "reallymello-nightwatchjs-database-example",
-    "version": "1.0.0",
-    "description": "Accessibility testing tutorial example with NightwatchJS",
-    "main": "index.js",
-    "scripts": {
-        "test": "nightwatch"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/reallymello/nightwatchTutorials/databaseExample"
-    },
-    "keywords": [
-        "nightwatchjs",
-        "database",
-        "assertions",
-        "tutorial",
-        "youtube"
-    ],
-    "author": "David Mello",
-    "license": "Apache-2.0",
-    "dependencies": {
-        "chromedriver": "^100.0.0",
-        "mssql": "^6.0.1",
-        "nightwatch": "^2.4.2",
-        "nightwatch-mssql-assertions": "^1.0.0"
-    }
+  "name": "reallymello-nightwatchjs-database-example",
+  "version": "1.0.0",
+  "description": "Accessibility testing tutorial example with NightwatchJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reallymello/nightwatchTutorials/databaseExample"
+  },
+  "keywords": [
+    "nightwatchjs",
+    "database",
+    "assertions",
+    "tutorial",
+    "youtube"
+  ],
+  "author": "David Mello",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "nightwatch": "^2.6.10",
+    "nightwatch-mssql-assertions": "^2.1.1"
+  },
+  "devDependencies": {
+    "chromedriver": "^109.0.0"
+  }
 }

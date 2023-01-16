@@ -1,4 +1,4 @@
-FROM microsoft/mssql-server-linux:latest
+FROM mcr.microsoft.com/mssql/server:latest
 
 RUN mkdir -p /opt/scripts
 COPY database.sql /opt/scripts
