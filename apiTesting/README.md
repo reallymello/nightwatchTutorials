@@ -2,7 +2,7 @@
 
 This tutorial shows how to use the [Nightwatch API Testing Plugin](https://github.com/nightwatchjs/nightwatch-plugin-apitesting) for testing REST APIs. This is convenient because you can have your API tests in the same project as your Selenium UI test automation instead of a separate SuperTest or Postman project for example.
 
-This example is used in the API testing tutorial article (API Testing with Nightwatch and SuperTest)[https://www.davidmello.com/api-testing-with-nightwatch-supertest/]
+This example is used in the API testing tutorial article [API Testing with Nightwatch and SuperTest](https://www.davidmello.com/api-testing-with-nightwatch-supertest/)
 
 The Nightwatch plugin has some advantages over separately importing SuperTest in that it is more nicely integrated with the Nightwatch reporting engine and provides an express mockserver.
 
