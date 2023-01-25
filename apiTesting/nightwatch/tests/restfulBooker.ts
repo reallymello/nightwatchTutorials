@@ -1,5 +1,5 @@
 import { NightwatchBrowser, NightwatchTests } from 'nightwatch';
-import superagent from 'superagent';
+import '@nightwatch/apitesting';
 
 const baseUrl: string = 'https://restful-booker.herokuapp.com';
 type token = {
@@ -9,13 +9,19 @@ let authToken: token;
 let bookingId: number;
 
 const bookerTests: NightwatchTests = {
-  before: async () => {
-    authToken = (
-      await superagent.post(`${baseUrl}/auth`).send({
+  before: async (client: NightwatchBrowser) => {
+    await client.supertest
+      .request(baseUrl)
+      .post('/auth')
+      .send({
         username: 'admin',
         password: 'password123',
       })
-    ).body;
+      .expect(200)
+      .expect('Content-type', 'application/json; charset=utf-8')
+      .then((response: any) => {
+        authToken = response.body;
+      });
   },
   'Can get first booking': async ({ supertest }: NightwatchBrowser) => {
     await supertest
@@ -30,7 +36,9 @@ const bookerTests: NightwatchTests = {
         expect(response.body[0].bookingid).to.be.greaterThan(0);
       });
   },
-  'Can create and retrieve booking': async ({ supertest }: NightwatchBrowser) => {
+  'Can create and retrieve booking': async ({
+    supertest,
+  }: NightwatchBrowser) => {
     const bookingData = {
       firstname: 'Really',
       lastname: 'Mello',
@@ -172,7 +180,9 @@ const bookerTests: NightwatchTests = {
       .set('Cookie', `token=${authToken.token}`)
       .expect(405);
   },
-  'Cannot retrieve deleted booking': async ({ supertest }: NightwatchBrowser) => {
+  'Cannot retrieve deleted booking': async ({
+    supertest,
+  }: NightwatchBrowser) => {
     await supertest
       .request(baseUrl)
       .get(`/booking/${bookingId}`)

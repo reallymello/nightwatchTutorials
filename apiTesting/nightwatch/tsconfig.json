@@ -8,9 +8,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "forceConsistentCasingInFileNames":true,
-    "paths": {
-      "nightwatch": ["./types/nightwatch.d.ts"]
-    }
+    "forceConsistentCasingInFileNames": true
   }
 }

@@ -4,6 +4,7 @@
  */
 
 import { NightwatchBrowser, NightwatchTests } from 'nightwatch';
+import '@nightwatch/apitesting';
 
 const server = require('../../restfulBooker/restful-booker/app');
 
