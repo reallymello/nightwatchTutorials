@@ -22,7 +22,8 @@ module.exports = {
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/#writing-custom-commands
   custom_commands_path: [],
-  // plugins: ['nightwatch-axe-verbose'],
+
+  plugins: ['nightwatch-axe-verbose'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/#writing-custom-assertions
   custom_assertions_path: '',
