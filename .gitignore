@@ -108,3 +108,6 @@ tests_output
 
 # Nightwatch typescript distrib
 distrib/src/tests
+
+#NW undefined folder bug
+undefined/

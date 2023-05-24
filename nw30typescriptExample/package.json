@@ -1,0 +1,19 @@
+{
+  "name": "nw30typescriptexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/nightwatch": "^2.3.23",
+    "chromedriver": "^113.0.0",
+    "nightwatch": "^2.6.21",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
