@@ -40,4 +40,19 @@ module.exports = {
         "first_name = 'Jane' AND last_name = 'Doe'"
       );
   },
+  'Can getSqlValue': async (browser) => {
+    let result = await browser.getSqlValue(
+      "SELECT first_name FROM people WHERE first_name = 'John' and last_name = 'Doe'"
+    );
+    expect(result).to.have.property('first_name', 'John');
+  },
+  'Can change and getSqlValue': async (browser) => {
+    let changeResult = await browser.runSql(
+      "INSERT INTO people (first_name, last_name) VALUES ('Jon', 'Doughey')"
+    );
+    let result = await browser.getSqlValue(
+      "SELECT first_name FROM people WHERE last_name = 'Doughey'"
+    );
+    expect(result).to.have.property('first_name', 'Jon');
+  },
 };
