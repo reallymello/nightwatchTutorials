@@ -20,10 +20,10 @@
     "license": "Apache-2.0",
     "dependencies": {
         "geckodriver": "^3.2.0",
-        "nightwatch": "^2.4.2",
+        "nightwatch": "^2.6.21",
         "nightwatch-axe-verbose": "^2.0.1"
     },
     "devDependencies": {
-        "chromedriver": "^103.0.0"
+        "chromedriver": "^113.0.0"
     }
 }
