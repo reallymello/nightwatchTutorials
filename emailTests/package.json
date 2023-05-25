@@ -11,8 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "chromedriver": "^104.0.0",
-    "nightwatch": "^2.4.2"
+    "chromedriver": "^113.0.0",
+    "nightwatch": "^2.6.21"
   },
   "dependencies": {
     "nightwatch-mailtrap": "^1.0.1",
