@@ -21,9 +21,9 @@
     "dependencies": {
         "geckodriver": "^3.2.0",
         "nightwatch": "^2.6.21",
-        "nightwatch-axe-verbose": "^2.0.1"
+        "nightwatch-axe-verbose": "^2.2.2"
     },
     "devDependencies": {
-        "chromedriver": "^113.0.0"
+        "chromedriver": "^114.0.3"
     }
 }
