@@ -27,15 +27,14 @@ module.exports = {
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
   plugins: ['@nightwatch/apitesting'],
-  
+
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: '',
-  
 
   webdriver: {},
 
   test_workers: {
-    enabled: true
+    enabled: true,
   },
 
   test_settings: {
@@ -46,20 +45,19 @@ module.exports = {
       screenshots: {
         enabled: false,
         path: 'screens',
-        on_failure: true
+        on_failure: true,
       },
 
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
       },
-      start_session: false,
+
       webdriver: {
-        start_process: false,
-        server_path: ''
+        start_process: true,
+        server_path: '',
       },
-      
     },
-    
+
     chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
@@ -73,8 +71,8 @@ module.exports = {
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
             //'--headless'
-          ]
-        }
+          ],
+        },
       },
 
       webdriver: {
@@ -82,10 +80,14 @@ module.exports = {
         server_path: '',
         cli_args: [
           // --verbose
-        ]
-      }
+        ],
+      },
     },
-    
   },
-  
+
+  usage_analytics: {
+    enabled: true,
+    log_path: './logs/analytics',
+    client_id: '12d32bdf-5108-4a91-9739-60abe78564a0',
+  },
 };

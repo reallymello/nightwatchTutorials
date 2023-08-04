@@ -17,6 +17,9 @@ The Nightwatch plugin has some advantages over separately importing SuperTest in
 - Local tests against the [Restful Booker](https://github.com/mwinteringham/restful-booker) API code run locally (to simulate local dev/test workflows)
   [/nightwatch/tests/restfulBooker.ts](/apiTesting/nightwatch/tests/restfulBookerLocal.ts)
 
+- Hybrid Nightwatch and API test also against the Swagger PetStore to show using Nightwatch browser commands and SuperTest API testing in the same test
+  [/nightwatch/tests/hybrid-browser-api-test.ts](apiTesting/nightwatch/tests/hybrid-browser-api-test.ts)
+
 More test APIs can be found on [https://www.davidmello.com/best-websites-for-practicing-test-automation/](https://www.davidmello.com/best-websites-for-practicing-test-automation/)
 
 ## Installation
@@ -43,6 +46,8 @@ If you are starting a project from scratch you'll need to add `@nightwatch/apite
 
 3. If your project is only running API tests you can shut off launching the browser by adding/changing these settings in your run profile also in `nightwatch.conf.js`
 
+If you have tests that call the Nightwatch browser and API tests you need to leave these true or the browser won't launch. This makes sense to set to false if your suite is only API tests (so the browser doesn't pop open for no reason).
+
 ```js
 // nightwatch.conf.js
 {
@@ -54,6 +59,8 @@ If you are starting a project from scratch you'll need to add `@nightwatch/apite
 ```
 
 4. Optionally, for type support, you can use the ApiTest type inside `./nightwatch/types/nightwatch.d.ts`
+
+_This should not be needed for Nightwatch >= v3.0_
 
 This would allow you to have intellisense when working with the supertest object if you provide the type in your test similar to
 
