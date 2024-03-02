@@ -1,0 +1,32 @@
+{
+  "Create Page Object": {
+    "scope": "javascript,typescript",
+    "prefix": "nw-po",
+    "isFileTemplate": true,
+    "body": [
+      "import { EnhancedPageObject, PageObjectModel } from 'nightwatch';\n",
+      "const ${TM_FILENAME_BASE/\\b(\\w)/${1:/downcase}/}Commands = {",
+      "	${1:// clickNext(this: $TM_FILENAME_BASE) { this.click('[data-testid=\"continueButton\"]'); \\},}",
+      "};\n",
+      "const ${TM_FILENAME_BASE/\\b(\\w)/${1:/downcase}/}: PageObjectModel = {",
+      "	commands: [${TM_FILENAME_BASE/\\b(\\w)/${1:/downcase}/}Commands],",
+      "	elements: {$0},",
+      "};\n",
+      "export default ${TM_FILENAME_BASE/\\b(\\w)/${1:/downcase}/};\n",
+
+      "export interface $TM_FILENAME_BASE",
+      "	extends EnhancedPageObject<",
+      "		typeof ${TM_FILENAME_BASE/\\b(\\w)/${1:/downcase}/}Commands,",
+      "		typeof ${TM_FILENAME_BASE/\\b(\\w)/${1:/downcase}/}.elements",
+      "	> {}\n"
+    ],
+    "description": "Create basic TypeScript Page Object for Nightwatch"
+  },
+  "data-testid element": {
+    "scope": "javascript,typescript",
+    "prefix": "nw-tid",
+    "isFileTemplate": false,
+    "body": ["${1:elementName}: '[data-testid=\"${2:dcNameId}\"]',${0}"],
+    "description": "Create data-testid CSS locator for Page object element collection"
+  }
+}
