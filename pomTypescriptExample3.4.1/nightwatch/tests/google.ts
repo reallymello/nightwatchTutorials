@@ -1,6 +1,6 @@
 import { NightwatchAPI, NightwatchTests } from 'nightwatch';
 
-const home: NightwatchTests = {
+const googleTest: NightwatchTests = {
   before: (browser: NightwatchAPI) => {
     // .navigate navigates to the URL defined in the url property of the GoogleSearchpage page object
     // Only using once so no need to place in a constant first.
@@ -16,6 +16,9 @@ const home: NightwatchTests = {
       .waitForElementVisible('@searchResultsDiv')
       .assert.textContains('@searchResultsDiv', 'Nightwatch.js');
   },
+  after: (browser: NightwatchAPI) => {
+    browser.end();
+  },
 };
 
-export default home;
+export default googleTest;
