@@ -2,12 +2,12 @@ import { EnhancedPageObject, PageObjectModel } from 'nightwatch';
 
 const googleResultsPageCommands = {};
 
-const googleResultsPage: PageObjectModel = {
+const googleResultsPage = {
   commands: [googleResultsPageCommands],
   elements: {
     searchResultsDiv: '#rso',
   },
-};
+} satisfies PageObjectModel;
 
 export default googleResultsPage;
 

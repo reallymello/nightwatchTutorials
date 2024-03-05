@@ -10,11 +10,11 @@ const googleSearchPageCommands = {
   },
 };
 
-const googleSearchPage: PageObjectModel = {
+const googleSearchPage = {
   url: 'https://google.com/ncr',
   commands: [googleSearchPageCommands],
   elements: { searchInput: 'textarea[name=q]' },
-};
+} satisfies PageObjectModel;
 
 export default googleSearchPage;
 
