@@ -7,6 +7,16 @@ const googleResultsPage = {
   elements: {
     searchResultsDiv: '#rso',
   },
+  sections: {
+    someSection: {
+      selector: "#someSectionSelector",
+      commands: [{
+        clickOnSomeThing(this: EnhancedPageObject) {
+          this.click('@searchResultsDiv');
+        }
+      }]
+    }
+  }
 } satisfies PageObjectModel;
 
 export default googleResultsPage;
@@ -14,5 +24,6 @@ export default googleResultsPage;
 export interface GoogleResultsPage
   extends EnhancedPageObject<
     typeof googleResultsPageCommands,
-    typeof googleResultsPage.elements
+    typeof googleResultsPage.elements,
+    typeof googleResultsPage.sections
   > {}

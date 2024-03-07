@@ -15,6 +15,8 @@ const googleTest: NightwatchTests = {
     browser.page.Google.GoogleResultsPage()
       .waitForElementVisible('@searchResultsDiv')
       .assert.textContains('@searchResultsDiv', 'Nightwatch.js');
+    // how to resolve this? 
+    browser.page.Google.GoogleResultsPage().section.someSection.clickOnSomeThing();
   },
   after: (browser: NightwatchAPI) => {
     browser.end();
