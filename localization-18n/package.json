@@ -1,0 +1,21 @@
+{
+  "name": "i18next-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@swc/core": "^1.11.24",
+    "i18next": "^25.0.2",
+    "i18next-fs-backend": "^2.6.0",
+    "nightwatch": "^3.12.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
